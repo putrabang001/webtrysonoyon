@@ -1,0 +1,49 @@
+{
+  "title": "bali",
+  "description": "isi nya meta description",
+  "content": "",
+  "sections": [
+    {
+      "type": "accordion",
+      "heading": "pertanyaan",
+      "items": [
+        {
+          "title": "pertanyaan 1",
+          "content": "pertanyaan 1 adalah"
+        },
+        {
+          "title": "pertanyaan 2",
+          "content": "pertanyaan 2 adalah"
+        },
+        {
+          "title": "pertanyaan 3",
+          "content": "pertanyaan 3 big"
+        }
+      ]
+    },
+    {
+      "type": "tour-grid",
+      "heading": "",
+      "items": [
+        {
+          "title": "The Balinese",
+          "description": "Tour Bali nih boss",
+          "link": "http://localhost:3000/en/indonesia/java-metal",
+          "image": "images/adventure.png"
+        }
+      ]
+    }
+  ],
+  "category": "",
+  "hero": {
+    "heading": "ini hero heading",
+    "subtitle": "ini hero subtitle",
+    "image": ""
+  },
+  "sidebar": {
+    "duration": "3D 2Y",
+    "price": "1.000.000",
+    "difficulty": "2",
+    "mapImage": ""
+  }
+}

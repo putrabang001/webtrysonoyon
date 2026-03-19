@@ -1,0 +1,166 @@
+{
+  "meta": {
+    "title": "Travel Designer — Travel Agency in Bali | Indonesia Tours",
+    "description": "Our travel agency in Bali organizes private stays in Bali and Indonesia. High-end tailor-made tours in Indonesia."
+  },
+  "hero": {
+    "heading": "Travel Agency in Bali",
+    "buttonText": "Let's create your trip together",
+    "backgroundImage": "images/hero.png"
+  },
+  "about": {
+    "heading": "Bali and Indonesia Stays",
+    "text": "Travel Designer is a <a href=\"#\" class=\"link-accent\">travel agency in Bali</a> that organizes private and high-end stays in Indonesia. Our tours are carefully organized in compliance with <a href=\"#\" class=\"link-accent\">responsible tourism</a>. You are taken care of by our agency from your arrival in Bali until your return trip.",
+    "checklist": [
+      "Private driver and English-speaking guide",
+      "High-end travel",
+      "Luxury hotels",
+      "Concierge service 24/7"
+    ],
+    "linkText": "Learn more about our agency",
+    "image": "images/about.png"
+  },
+  "specialist": {
+    "heading": "Specialist Travel Agency in Bali",
+    "text": "A <strong>tailor-made trip to Bali</strong> is ideal for appreciating the tranquility of the island and the hospitality of its inhabitants. Immerse yourself in local legends during an exceptional tour with our <strong>Bali travel agency</strong>. Discover a unique culture and traditions that endure. Combining beaches, jungles, rice terraces, volcanoes, waterfalls, and temples, a <strong>trip to Bali organized by our agency</strong> stands out for its diversity. On site, hotel infrastructures respond perfectly to a <strong>luxury tour</strong>.",
+    "buttonText": "Our Bali travel ideas",
+    "backgroundImage": "images/specialist.png"
+  },
+  "selection": {
+    "heading": "Our Selection",
+    "subtitle": "<strong>Tour ideas</strong> and <strong>useful information</strong> for a perfectly successful <a href=\"#\" class=\"link-accent\">exceptional stay in Bali</a>",
+    "cards": [
+      {
+        "title": "New Arrivals",
+        "image": "images/nouveaute.png",
+        "link": "#",
+        "tall": true
+      },
+      {
+        "title": "Favorites",
+        "image": "images/coup-coeur.png",
+        "link": "#",
+        "tall": false
+      },
+      {
+        "title": "Magazine",
+        "image": "images/magazine.png",
+        "link": "#",
+        "tall": false
+      },
+      {
+        "title": "Destination Info",
+        "image": "images/infos.png",
+        "link": "#",
+        "tall": false
+      }
+    ]
+  },
+  "themes": {
+    "heading": "Travel Themes",
+    "subtitle": "For everyone's <strong>travel desires</strong> in <a href=\"#\" class=\"link-accent\">Indonesia</a>, what will yours be?",
+    "cards": [
+      {
+        "title": "Luxury Travel",
+        "image": "images/luxury.png",
+        "link": "#"
+      },
+      {
+        "title": "Culture Stay",
+        "image": "images/culture.png",
+        "link": "#"
+      },
+      {
+        "title": "Family Trip",
+        "image": "images/family.png",
+        "link": "#"
+      },
+      {
+        "title": "Adventure Tour",
+        "image": "images/adventure.png",
+        "link": "#"
+      },
+      {
+        "title": "Honeymoon",
+        "image": "images/honeymoon.png",
+        "link": "#"
+      },
+      {
+        "title": "Beach Stay",
+        "image": "images/beach.png",
+        "link": "#"
+      }
+    ]
+  },
+  "destinations": {
+    "heading": "Our Destinations in Indonesia",
+    "subtitle": "Discover our island-by-island <strong>travel ideas</strong> in <a href=\"#\" class=\"link-accent\">Indonesia</a>",
+    "cards": [
+      {
+        "name": "Bali",
+        "image": "images/bali.png",
+        "link": "#"
+      },
+      {
+        "name": "Flores",
+        "image": "images/flores.png",
+        "link": "#"
+      },
+      {
+        "name": "Java",
+        "image": "images/java.png",
+        "link": "#"
+      },
+      {
+        "name": "Lombok",
+        "image": "images/lombok.png",
+        "link": "#"
+      },
+      {
+        "name": "Sulawesi",
+        "image": "",
+        "link": "#",
+        "gradient": "linear-gradient(135deg, #1a5c4b, #2d8b78)"
+      },
+      {
+        "name": "Sumatra",
+        "image": "",
+        "link": "#",
+        "gradient": "linear-gradient(135deg, #2d4a3e, #4a7c6b)"
+      }
+    ]
+  },
+  "values": {
+    "heading": "Our Added Value",
+    "cards": [
+      {
+        "icon": "star",
+        "title": "Quality",
+        "description": "A high-end, tailor-made travel agency in Bali that perfectly manages its destination"
+      },
+      {
+        "icon": "check",
+        "title": "Responsibility",
+        "description": "A company that contributes to the development of responsible tourism and donates 3% of its profits to the Anak association in Bali"
+      },
+      {
+        "icon": "shield",
+        "title": "Serenity",
+        "description": "Attentive and responsive travel advisors who support you before and during your stay in Indonesia"
+      },
+      {
+        "icon": "help",
+        "title": "Assistance",
+        "description": "Available 24/7 during your trip, our concierge service in Bali addresses all your requests"
+      }
+    ]
+  },
+  "reviews": {
+    "heading": "Our Traveler Reviews",
+    "subtitle": "They trusted us, discover their <strong>feedback</strong>.",
+    "rating": "4.9/5",
+    "ratingLabel": "Excellent | 157 reviews",
+    "buttonText": "Read Reviews",
+    "buttonLink": "#"
+  }
+}

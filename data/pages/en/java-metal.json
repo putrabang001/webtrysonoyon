@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "title": "JAVA METAL",
+    "category": "Indonesia",
+    "slug": "java-metal",
+    "parentId": "indonesia",
+    "description": "JAVA METAL RF ONLINE"
+  },
+  "hero": {
+    "heading": "JAVA METAL",
+    "backgroundImage": ""
+  },
+  "sections": [
+    {
+      "type": "rich-text",
+      "content": "INI ADALAH KONTEN"
+    }
+  ]
+}

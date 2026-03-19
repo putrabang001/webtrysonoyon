@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{page.title}} | {{{c.site.title}}}</title>
+    <meta name="description" content="{{page.description}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .page-header-hero {
+            height: 400px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .page-header-hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.4);
+        }
+
+        .page-header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-layout {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 40px;
+            padding: 60px 0;
+        }
+
+        @media (max-width: 992px) {
+            .page-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .sidebar-box {
+            background: var(--color-alt);
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .sidebar-box h3 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            color: var(--color-primary);
+        }
+
+        .sidebar-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar-nav li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar-nav a {
+            color: var(--color-text);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .sidebar-nav a:hover, .sidebar-nav a.active {
+            color: var(--color-accent);
+            font-weight: 600;
+        }
+
+        .content-section {
+            margin-bottom: 60px;
+        }
+
+        .breadcrumb {
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .breadcrumb span {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header id="header" class="header">
+        <div class="header-inner">
+            <a href="/" class="logo">
+                <span class="logo-text">{{{site.logoText}}}</span>
+                <svg class="logo-icon" viewBox="0 0 40 40" width="28" height="28" fill="currentColor">
+                    <polygon points="20,2 38,20 30,20 35,35 20,25 5,35 10,20 2,20" />
+                </svg>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    {{{navHtml}}}
+                    <li class="nav-item">
+                        <div class="lang-switcher">
+                            {{{langSwitcherHtml}}}
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#contact" class="btn-contact-header">{{{t.contactUs}}}</a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ========== PAGE HERO ========== -->
+    <section class="page-header-hero" style="background-image: url('/{{#if page.hero.image}}{{page.hero.image}}{{else if page.hero.backgroundImage}}{{page.hero.backgroundImage}}{{else if page.heroImage}}{{page.heroImage}}{{else}}{{{c.hero.backgroundImage}}}{{/if}}')">
+        <div class="page-header-content container">
+            <div class="breadcrumb">
+                <a href="/">Home</a>
+                {{{breadcrumbHtml}}}
+            </div>
+            <h1>{{page.title}}</h1>
+        </div>
+    </section>
+
+    <div class="container page-layout">
+        <main class="page-main">
+            {{#each page.content}}
+                <div class="content-section" id="section-{{@index}}">
+                    {{#if (eq type 'rich-text')}}
+                        <div class="rich-text">
+                            {{{content}}}
+                        </div>
+                    {{/if}}
+
+                    {{#if (eq type 'image-text')}}
+                        <div class="about-grid" style="grid-template-columns: {{#if (eq layout 'image-left')}}1fr 1fr{{else}}1fr 1fr{{/if}}">
+                            {{#if (eq layout 'image-left')}}
+                                <div class="about-image"><img src="/{{image}}" alt=""></div>
+                                <div class="about-text"><h3>{{title}}</h3><p>{{{text}}}</p></div>
+                            {{else}}
+                                <div class="about-text"><h3>{{title}}</h3><p>{{{text}}}</p></div>
+                                <div class="about-image"><img src="/{{image}}" alt=""></div>
+                            {{/if}}
+                        </div>
+                    {{/if}}
+
+                    {{#if (eq type 'accordion')}}
+                        <h3>{{title}}</h3>
+                        <div class="accordion">
+                            {{#each items}}
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <span>{{title}}</span>
+                                        <span class="toggle-icon">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                                        </span>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="accordion-content-inner">
+                                            {{{content}}}
+                                        </div>
+                                    </div>
+                                </div>
+                            {{/each}}
+                        </div>
+                    {{/if}}
+
+                    {{#if (eq type 'tour-grid')}}
+                        <h3>{{title}}</h3>
+                        <div class="tour-grid">
+                            {{#each items}}
+                                <div class="tour-card">
+                                    <img src="/{{image}}" alt="{{title}}">
+                                    <div class="tour-info">
+                                        <h4>{{title}}</h4>
+                                        <p>{{description}}</p>
+                                        {{#if price}}<div class="tour-price">From {{price}}</div>{{/if}}
+                                        <a href="{{link}}" class="btn-inline">Details</a>
+                                    </div>
+                                </div>
+                            {{/each}}
+                        </div>
+                    {{/if}}
+                </div>
+            {{/each}}
+        </main>
+
+        <aside class="page-sidebar">
+            {{#if page.sidebar.duration}}
+            <div class="sidebar-box sidebar-facts">
+                <h3>Quick Facts</h3>
+                <div class="fact-item"><strong>Duration:</strong> {{page.sidebar.duration}}</div>
+                <div class="fact-item"><strong>Starting Price:</strong> {{page.sidebar.price}}</div>
+                <div class="fact-item"><strong>Difficulty:</strong> {{page.sidebar.difficulty}}</div>
+                {{#if page.sidebar.mapImage}}
+                <div class="sidebar-map"><img src="/{{page.sidebar.mapImage}}" alt="Map"></div>
+                {{/if}}
+            </div>
+            {{/if}}
+
+            {{#if sidebar.showNav}}
+                <div class="sidebar-box sidebar-nav">
+                    <h3>Explore</h3>
+                    <ul>
+                        {{{sidebarNavHtml}}}
+                    </ul>
+                </div>
+            {{/if}}
+
+            <div class="sidebar-box">
+                <h3>{{{c.contact.contactExpertTitle}}}</h3>
+                <p>{{{contactExpertText}}}</p>
+                <a href="#contact" class="btn-hero btn-sidebar" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    {{{t.contactUs}}}
+                </a>
+            </div>
+        </aside>
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-bg" style="background-image: url('/{{{c.specialist.backgroundImage}}}')"></div>
+        <div class="footer-overlay"></div>
+        <div class="container footer-content">
+            <div class="footer-grid">
+                {{#each c.footer.columns}}
+                <div class="footer-col">
+                    <h4>{{#if this.titleLink}}<a href="{{this.titleLink}}">{{this.title}}</a>{{else}}{{this.title}}{{/if}}</h4>
+                    <ul>
+                        {{#each this.links}}
+                        <li><a href="{{this.url}}">{{this.text}}</a></li>
+                        {{/each}}
+                    </ul>
+                </div>
+                {{/each}}
+            </div>
+            <div class="footer-social">
+                {{#if c.footer.social.facebook}}
+                <a href="{{c.footer.social.facebook}}" aria-label="Facebook" class="social-link">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z" />
+                    </svg>
+                </a>
+                {{/if}}
+                {{#if c.footer.social.youtube}}
+                <a href="{{c.footer.social.youtube}}" aria-label="YouTube" class="social-link">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43zM9.75 15.02V8.48l5.75 3.27-5.75 3.27z" />
+                    </svg>
+                </a>
+                {{/if}}
+                {{#if c.footer.social.instagram}}
+                <a href="{{c.footer.social.instagram}}" aria-label="Instagram" class="social-link">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                    </svg>
+                </a>
+                {{/if}}
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    {{#each c.footer.legal}}
+                    <a href="{{this.url}}">{{this.text}}</a>
+                    {{#unless @last}}<span>|</span>{{/unless}}
+                    {{/each}}
+                    <span>|</span>
+                    <span>{{{c.footer.copyright}}}</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    {{#if pageId}}
+    <a href="/admin/dashboard.html?lang={{lang}}&pageId={{pageId}}" class="btn-edit-page">✏️ Edit Page</a>
+    {{/if}}
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+{
+  "title": "Bali",
+  "description": "Découvrez la magie de Bali, l'île des Dieux.",
+  "content": "",
+  "sections": [
+    {
+      "type": "accordion",
+      "heading": "Questions Fréquentes",
+      "items": [
+        {
+          "title": "Quelle est la meilleure période ?",
+          "content": "La meilleure période pour visiter Bali est d'avril à octobre."
+        },
+        {
+          "title": "Ai-je besoin d'un visa ?",
+          "content": "La plupart des voyageurs peuvent obtenir un visa à l'arrivée."
+        }
+      ]
+    },
+    {
+      "type": "tour-grid",
+      "heading": "Nos Circuits à Bali",
+      "items": [
+        {
+          "title": "L'Essence de Bali",
+          "description": "Un voyage inoubliable à travers les rizières et les temples.",
+          "link": "/fr/indonesia/bali",
+          "image": "images/adventure.png"
+        }
+      ]
+    }
+  ],
+  "hero": {
+    "heading": "Explorez Bali",
+    "subtitle": "Culture, Nature et Sérénité",
+    "image": ""
+  },
+  "sidebar": {
+    "duration": "3D 2Y",
+    "price": "1.000.000",
+    "difficulty": "2",
+    "mapImage": ""
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "header": {
+    "contactUs": "Contact Us"
+  },
+  "nav": {
+    "indonesia": "Indonesia",
+    "bali": "Bali",
+    "java-metal": "JAVA METAL",
+    "lombok": "Lombok",
+    "themes": "Themes",
+    "luxury-travel": "Luxury Travel",
+    "adventure-tour": "Adventure Tour",
+    "culture-stay": "Culture Stay",
+    "honeymoon": "Honeymoon",
+    "family-trip": "Family Trip",
+    "beach-stay": "Beach Stay",
+    "concept": "Concept",
+    "who-are-we": "Who Are We?",
+    "values": "Our Values",
+    "organized-trips": "Our Organized Trips",
+    "ecotourism-bali": "Ecotourism Bali",
+    "indonesia-info": "Indonesia Info",
+    "contact-page": "Contact Page",
+    "magazine": "Magazine"
+  },
+  "footer": {
+    "col-indonesia": "Indonesia",
+    "col-themes": "Themes",
+    "col-concept": "Concept",
+    "col-about": "About",
+    "legal-terms": "Terms of Sale",
+    "legal-notice": "Legal Notice",
+    "legal-privacy": "Privacy Policy",
+    "legal-sustainability": "Sustainability Policy"
+  }
+}

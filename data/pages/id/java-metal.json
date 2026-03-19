@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "JAVA METAL",
+    "category": "Indonesia",
+    "description": "Petualangan Java Metal dalam Bahasa Indonesia."
+  },
+  "hero": {
+    "heading": "JAVA METAL",
+    "subtitle": "Pengalaman mendalam di Jawa",
+    "backgroundImage": ""
+  },
+  "sections": [
+    {
+      "type": "rich-text",
+      "content": "Di sinilah petualangan dimulai."
+    }
+  ]
+}

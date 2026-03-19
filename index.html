@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{{c.site.title}}}</title>
+    <meta name="description" content="{{{c.site.description}}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header id="header" class="header">
+        <div class="header-inner">
+            <a href="/" class="logo">
+                <span class="logo-text">{{{site.logoText}}}</span>
+                <svg class="logo-icon" viewBox="0 0 40 40" width="28" height="28" fill="currentColor">
+                    <polygon points="20,2 38,20 30,20 35,35 20,25 5,35 10,20 2,20" />
+                </svg>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    {{{navHtml}}}
+                    <li class="nav-item">
+                        <div class="lang-switcher">
+                            {{{langSwitcherHtml}}}
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#contact" class="btn-contact-header">{{{t.contactUs}}}</a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ========== SIDE CONTACT TAB ========== -->
+    <a href="#contact" class="side-tab">{{{c.contact.formText}}}</a>
+
+    <!-- ========== HERO ========== -->
+    <section id="hero" class="hero">
+        <div class="hero-bg" style="background-image: url('/{{{c.hero.backgroundImage}}}')"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <h1>{{{c.hero.heading}}}</h1>
+            <a href="#contact" class="btn-hero">{{{c.hero.buttonText}}}</a>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="about section-light">
+        <div class="container about-grid">
+            <div class="about-text reveal">
+                <h2>{{{c.about.heading}}}</h2>
+                <div class="about-desc">{{{c.about.text}}}</div>
+                <ul class="checklist">
+                    {{#each c.about.checklist}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                <a href="#" class="link-more">
+                    <span class="arrow">▶</span> {{{c.about.linkText}}}
+                </a>
+            </div>
+            <div class="about-image reveal">
+                <img src="/{{{c.about.image}}}" alt="About" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SPECIALIST ========== -->
+    <section id="specialist" class="specialist">
+        <div class="specialist-bg" style="background-image: url('/{{{c.specialist.backgroundImage}}}')"></div>
+        <div class="specialist-overlay"></div>
+        <div class="container specialist-content">
+            <div class="specialist-text reveal">
+                <h2>{{{c.specialist.heading}}}</h2>
+                <p>{{{c.specialist.text}}}</p>
+                <a href="#" class="btn-outline">{{{c.specialist.buttonText}}}</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SELECTION ========== -->
+    <section id="selection" class="selection section-light">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>{{{c.selection.heading}}}</h2>
+                <p class="section-subtitle">{{{c.selection.subtitle}}}</p>
+            </div>
+            <div class="selection-grid reveal">
+                {{#each c.selection.cards}}
+                <a href="{{this.link}}" class="selection-card {{#if this.tall}}selection-card--tall{{/if}}">
+                    <img src="/{{this.image}}" alt="{{this.title}}" loading="lazy">
+                    <div class="selection-card__overlay">
+                        <span class="selection-card__title">{{this.title}}</span>
+                    </div>
+                </a>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== THEMES ========== -->
+    <section id="themes" class="themes section-light">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>{{{c.themes.heading}}}</h2>
+                <p class="section-subtitle">{{{c.themes.subtitle}}}</p>
+            </div>
+            <div class="themes-grid reveal">
+                {{#each c.themes.cards}}
+                <a href="{{this.link}}" class="theme-card">
+                    <img src="/{{this.image}}" alt="{{this.title}}" loading="lazy">
+                    <div class="theme-card__overlay">
+                        <span class="theme-card__title">{{this.title}}</span>
+                    </div>
+                </a>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== DESTINATIONS ========== -->
+    <section id="destinations" class="destinations section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>{{{c.destinations.heading}}}</h2>
+                <p class="section-subtitle">{{{c.destinations.subtitle}}}</p>
+            </div>
+            <div class="carousel reveal" id="carousel">
+                <button class="carousel-btn carousel-btn--prev" id="carouselPrev" aria-label="Previous">
+                    <svg viewBox="0 0 24 24" width="30" height="30">
+                        <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="carousel-track-container">
+                    <div class="carousel-track" id="carouselTrack">
+                        {{#each c.destinations.cards}}
+                        <div class="carousel-slide">
+                            <a href="{{this.link}}" class="dest-card" {{#if this.gradient}}style="background: {{this.gradient}}"{{/if}}>
+                                {{#if this.image}}<img src="/{{this.image}}" alt="{{this.name}}" loading="lazy">{{/if}}
+                                <div class="dest-card__overlay">
+                                    <span class="dest-card__title">{{this.name}}</span>
+                                </div>
+                            </a>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-btn--next" id="carouselNext" aria-label="Next">
+                    <svg viewBox="0 0 24 24" width="30" height="30">
+                        <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </section>
+
+    <!-- ========== VALUES ========== -->
+    <section id="values" class="values section-light">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>{{{c.values.heading}}}</h2>
+            </div>
+            <div class="values-grid reveal">
+                {{#each c.values.cards}}
+                <a href="#" class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 24 24" width="48" height="48" fill="currentColor">
+                            {{#if (eq this.icon 'star')}}<path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z" />{{/if}}
+                            {{#if (eq this.icon 'check')}}<path d="M12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm-1-9.41l-3.29-3.3L6.3 10.7l4.7 4.71 8-8-1.41-1.42L11 12.59z" />{{/if}}
+                            {{#if (eq this.icon 'shield')}}<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />{{/if}}
+                            {{#if (eq this.icon 'help')}}<path d="M11.5 2C6.81 2 3 5.81 3 10.5S6.81 19 11.5 19h.5v3c4.86-2.34 8-7.5 8-11.5C20 5.81 16.19 2 11.5 2zm1 14.5h-2v-2h2v2zm0-3.5h-2c0-3.25 3-3 3-5 0-1.1-.9-2-2-2s-2 .9-2 2h-2c0-2.21 1.79-4 4-4s4 1.79 4 4c0 2.5-3 2.75-3 5z" />{{/if}}
+                        </svg>
+                    </div>
+                    <h3>{{{this.title}}}</h3>
+                    <p>{{{this.description}}}</p>
+                </a>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== REVIEWS ========== -->
+    <section id="reviews" class="reviews section-light">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>{{{c.reviews.heading}}}</h2>
+                <p class="section-subtitle">{{{c.reviews.subtitle}}}</p>
+            </div>
+            <div class="reviews-content reveal">
+                <div class="reviews-image">
+                    <div class="reviews-image-placeholder" style="background: linear-gradient(135deg, #e8d5b7, #4a7c6b);">
+                        <span style="font-size: 3rem;">🚐</span>
+                        <p style="color: white; font-weight: 600;">Travel Designer</p>
+                    </div>
+                </div>
+                <div class="reviews-rating">
+                    <div class="rating-score">
+                        <span class="rating-number">{{{c.reviews.rating}}}</span>
+                        <div class="stars">
+                            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                        </div>
+                    </div>
+                    <p class="rating-label">{{{c.reviews.ratingLabel}}}</p>
+                    <a href="{{{c.reviews.buttonLink}}}" class="btn-reviews">{{{c.reviews.buttonText}}}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT BAR ========== -->
+    <section id="contact" class="contact-bar">
+        <div class="container contact-bar-inner">
+            <a href="#contact" class="contact-item">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm-1 9h-2v2H9v-2H7v-2h2V7h2v2h2v2zm-1-8.5L17.5 8H12V2.5z" />
+                </svg>
+                {{{c.contact.formText}}}
+            </a>
+            <a href="{{{c.contact.phoneLink}}}" class="contact-item">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                </svg>
+                {{{c.contact.phone}}}
+            </a>
+            <a href="mailto:{{{c.contact.email}}}" class="contact-item">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                </svg>
+                {{{c.contact.email}}}
+            </a>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-bg" style="background-image: url('/{{{c.specialist.backgroundImage}}}')"></div>
+        <div class="footer-overlay"></div>
+        <div class="container footer-content">
+            <div class="footer-grid">
+                {{#each c.footer.columns}}
+                <div class="footer-col">
+                    <h4>{{#if this.titleLink}}<a href="{{this.titleLink}}">{{this.title}}</a>{{else}}{{this.title}}{{/if}}</h4>
+                    <ul>
+                        {{#each this.links}}
+                        <li><a href="{{this.url}}">{{this.text}}</a></li>
+                        {{/each}}
+                    </ul>
+                </div>
+                {{/each}}
+            </div>
+            <div class="footer-social">
+                {{#if c.footer.social.facebook}}
+                <a href="{{c.footer.social.facebook}}" aria-label="Facebook" class="social-link">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z" />
+                    </svg>
+                </a>
+                {{/if}}
+                {{#if c.footer.social.youtube}}
+                <a href="{{c.footer.social.youtube}}" aria-label="YouTube" class="social-link">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43zM9.75 15.02V8.48l5.75 3.27-5.75 3.27z" />
+                    </svg>
+                </a>
+                {{/if}}
+                {{#if c.footer.social.instagram}}
+                <a href="{{c.footer.social.instagram}}" aria-label="Instagram" class="social-link">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                    </svg>
+                </a>
+                {{/if}}
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    {{#each c.footer.legal}}
+                    <a href="{{this.url}}">{{this.text}}</a>
+                    {{#unless @last}}<span>|</span>{{/unless}}
+                    {{/each}}
+                    <span>|</span>
+                    <span>{{{c.footer.copyright}}}</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

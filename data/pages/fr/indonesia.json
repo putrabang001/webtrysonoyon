@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "title": "Indonesia",
+    "category": "Destinations",
+    "slug": "indonesia",
+    "parentId": null,
+    "description": "Explore the diverse islands of Indonesia."
+  },
+  "hero": {
+    "heading": "Discover Indonesia",
+    "subtitle": "From ancient temples to pristine beaches.",
+    "backgroundImage": "images/bali-test.webp"
+  },
+  "sections": [
+    {
+      "type": "rich-text",
+      "content": "<h2>Welcome to Indonesia</h2><p>Indonesia is the world's largest archipelago, offering a wealth of cultural and natural wonders.</p>"
+    }
+  ]
+}

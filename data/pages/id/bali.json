@@ -1,0 +1,44 @@
+{
+  "title": "Bali",
+  "description": "Jelajahi keajaiban Bali, Pulau Dewata.",
+  "content": "",
+  "sections": [
+    {
+      "type": "accordion",
+      "heading": "Pertanyaan Umum",
+      "items": [
+        {
+          "title": "Kapan waktu terbaik berkunjung?",
+          "content": "Waktu terbaik adalah antara April hingga Oktober."
+        },
+        {
+          "title": "Apakah perlu visa?",
+          "content": "Banyak negara bisa mendapatkan Visa on Arrival."
+        }
+      ]
+    },
+    {
+      "type": "tour-grid",
+      "heading": "Paket Tur Bali",
+      "items": [
+        {
+          "title": "Intisari Bali",
+          "description": "Perjalanan tak terlupakan melalui sawah dan pura.",
+          "link": "/id/indonesia/bali",
+          "image": "images/adventure.png"
+        }
+      ]
+    }
+  ],
+  "hero": {
+    "heading": "Jelajahi Bali",
+    "subtitle": "Budaya, Alam, dan Ketenangan",
+    "image": ""
+  },
+  "sidebar": {
+    "duration": "3D 2Y",
+    "price": "1.000.000",
+    "difficulty": "2",
+    "mapImage": ""
+  }
+}

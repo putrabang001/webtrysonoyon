@@ -1,0 +1,37 @@
+{
+  "title": "Jawa",
+  "description": "Meta Deskripsi",
+  "content": "",
+  "sections": [
+    {
+      "type": "rich-text",
+      "content": "isi konten JAVANESIA"
+    },
+    {
+      "type": "accordion",
+      "heading": "pertanyaan",
+      "items": [
+        {
+          "title": "pertanyaan 1",
+          "content": "pertanyaan 1 big"
+        },
+        {
+          "title": "pertanyaan 2",
+          "content": "pertanyaan 2 big"
+        }
+      ]
+    }
+  ],
+  "category": "Indonesia",
+  "hero": {
+    "heading": "page hero heading",
+    "subtitle": "page hero subtitle",
+    "image": ""
+  },
+  "sidebar": {
+    "duration": "3D 2Y",
+    "price": "1.000.000",
+    "difficulty": "2",
+    "mapImage": "images/about.png"
+  }
+}

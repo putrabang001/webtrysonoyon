@@ -1,0 +1,409 @@
+{
+  "site": {
+    "title": "Travel Designer — Agence de voyage à Bali | Séjours Indonésie",
+    "description": "Notre agence de voyage à Bali organise des séjours privés à Bali et en Indonésie. Des circuits sur mesure et haut de gamme en Indonésie.",
+    "logoText": "TRAVEL DESIGNER"
+  },
+  "hero": {
+    "heading": "Agence de voyage à Bali",
+    "buttonText": "Créons ensemble votre voyage",
+    "backgroundImage": "images/hero.png"
+  },
+  "about": {
+    "heading": "Séjour Bali et Indonésie",
+    "text": "Travel Designer est une agence de <a href=\"#\" class=\"link-accent\">voyage à Bali</a> qui organise des séjours privés et haut de gamme en Indonésie. Nos circuits sont organisés avec soin dans le respect d'un <a href=\"#\" class=\"link-accent\">tourisme responsable</a>. Vous êtes pris en charge par notre agence depuis votre arrivée à Bali jusqu'à votre retour de voyage.",
+    "checklist": [
+      "Chauffeur privé et guide francophone",
+      "Voyage haut de gamme",
+      "Hôtels de luxe",
+      "Conciergerie française 24h/7j"
+    ],
+    "linkText": "En savoir plus sur notre agence",
+    "image": "images/about.png"
+  },
+  "specialist": {
+    "heading": "Agence spécialiste du voyage à Bali",
+    "text": "Un <strong>voyage sur mesure à Bali</strong> est idéal pour apprécier la quiétude de l'île et l'hospitalité de ses habitants. Imprégnez-vous des légendes locales le temps d'un circuit d'exception avec notre <strong>agence de voyage à Bali</strong>. Découvrez une culture singulière et des traditions qui perdurent. Conjuguant plages, jungles, rizières, volcans, cascades et temples, un <strong>voyage à Bali organisé par notre agence</strong> s'illustre par sa diversité. Sur place, les infrastructures hôtelières répondent parfaitement à un <strong>circuit de luxe</strong>.",
+    "buttonText": "Nos idées de voyages à Bali",
+    "backgroundImage": "images/specialist.png"
+  },
+  "selection": {
+    "heading": "Notre sélection",
+    "subtitle": "Des <strong>idées de circuits</strong> et des <strong>informations utiles</strong> pour un <a href=\"#\" class=\"link-accent\">séjour d'exception à Bali</a> parfaitement réussi",
+    "cards": [
+      {
+        "title": "Nouveauté",
+        "image": "images/nouveaute.png",
+        "link": "#",
+        "tall": true
+      },
+      {
+        "title": "Coup de cœur",
+        "image": "images/coup-coeur.png",
+        "link": "#",
+        "tall": false
+      },
+      {
+        "title": "Magazine",
+        "image": "images/magazine.png",
+        "link": "#",
+        "tall": false
+      },
+      {
+        "title": "Infos destination",
+        "image": "images/infos.png",
+        "link": "#",
+        "tall": false
+      }
+    ]
+  },
+  "themes": {
+    "heading": "Thématiques de voyage",
+    "subtitle": "À chacun ses <strong>envies de voyages</strong>, en <a href=\"#\" class=\"link-accent\">Indonésie</a>, quelles seront les vôtres ?",
+    "cards": [
+      {
+        "title": "Voyage de luxe",
+        "image": "images/luxury.png",
+        "link": "#"
+      },
+      {
+        "title": "Séjour culture",
+        "image": "images/culture.png",
+        "link": "#"
+      },
+      {
+        "title": "Voyage famille",
+        "image": "images/family.png",
+        "link": "#"
+      },
+      {
+        "title": "Circuit d'aventure",
+        "image": "images/adventure.png",
+        "link": "#"
+      },
+      {
+        "title": "Voyage de noces",
+        "image": "images/honeymoon.png",
+        "link": "#"
+      },
+      {
+        "title": "Séjour plage",
+        "image": "images/beach.png",
+        "link": "#"
+      }
+    ]
+  },
+  "destinations": {
+    "heading": "Nos destinations en Indonésie",
+    "subtitle": "Découvrez nos <strong>idées de voyages</strong> île par île en <a href=\"#\" class=\"link-accent\">Indonésie</a>",
+    "cards": [
+      {
+        "name": "Bali",
+        "image": "images/bali.png",
+        "link": "#"
+      },
+      {
+        "name": "Flores",
+        "image": "images/flores.png",
+        "link": "#"
+      },
+      {
+        "name": "Java",
+        "image": "images/java.png",
+        "link": "#"
+      },
+      {
+        "name": "Lombok",
+        "image": "images/lombok.png",
+        "link": "#"
+      },
+      {
+        "name": "Sulawesi",
+        "image": "",
+        "link": "#",
+        "gradient": "linear-gradient(135deg, #1a5c4b, #2d8b78)"
+      },
+      {
+        "name": "Sumatra",
+        "image": "",
+        "link": "#",
+        "gradient": "linear-gradient(135deg, #2d4a3e, #4a7c6b)"
+      }
+    ]
+  },
+  "values": {
+    "heading": "Notre valeur ajoutée",
+    "cards": [
+      {
+        "icon": "star",
+        "title": "Qualité",
+        "description": "Une agence de voyage à Bali haut de gamme et sur mesure qui maîtrise parfaitement sa destination"
+      },
+      {
+        "icon": "check",
+        "title": "Responsabilité",
+        "description": "Une entreprise qui contribue au développement d'un tourisme responsable et qui reverse 3% de ses bénéfices à l'association Anak à Bali"
+      },
+      {
+        "icon": "shield",
+        "title": "Sérénité",
+        "description": "Des conseillers voyages français attentifs et réactifs qui vous accompagnent avant et pendant votre séjour en Indonésie"
+      },
+      {
+        "icon": "help",
+        "title": "Assistance",
+        "description": "Disponible 24h/7j durant votre voyage, notre conciergerie française à Bali répond à toutes vos demandes"
+      }
+    ]
+  },
+  "reviews": {
+    "heading": "Nos avis voyageurs",
+    "subtitle": "Ils nous ont fait confiance, découvrez leur <strong>retour d'expérience</strong>.",
+    "rating": "4.9/5",
+    "ratingLabel": "Excellent | 157 avis",
+    "buttonText": "Découvrir les avis",
+    "buttonLink": "#"
+  },
+  "contact": {
+    "phone": "0852 7497 3092",
+    "phoneLink": "tel:+33184800662",
+    "email": "giankumala@gmail.com",
+    "formText": "Formulaire de contact"
+  },
+  "footer": {
+    "columns": [
+      {
+        "title": "Indonésie",
+        "titleLink": "#",
+        "links": [
+          {
+            "text": "Bali",
+            "url": "#"
+          },
+          {
+            "text": "Flores",
+            "url": "#"
+          },
+          {
+            "text": "Java",
+            "url": "#"
+          },
+          {
+            "text": "Lombok",
+            "url": "#"
+          },
+          {
+            "text": "Sulawesi",
+            "url": "#"
+          },
+          {
+            "text": "Sumatra",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "title": "Thématiques",
+        "links": [
+          {
+            "text": "Voyage de luxe",
+            "url": "#"
+          },
+          {
+            "text": "Circuit d'aventure",
+            "url": "#"
+          },
+          {
+            "text": "Voyage famille",
+            "url": "#"
+          },
+          {
+            "text": "Séjour culture",
+            "url": "#"
+          },
+          {
+            "text": "Voyage de noces",
+            "url": "#"
+          },
+          {
+            "text": "Séjour plage",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "title": "Concept",
+        "links": [
+          {
+            "text": "Nos valeurs",
+            "url": "#"
+          },
+          {
+            "text": "Nos voyages organisés",
+            "url": "#"
+          },
+          {
+            "text": "Tourisme responsable",
+            "url": "#"
+          },
+          {
+            "text": "Infos destination",
+            "url": "#"
+          },
+          {
+            "text": "Magazine",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "title": "À propos",
+        "links": [
+          {
+            "text": "Qui sommes-nous ?",
+            "url": "#"
+          },
+          {
+            "text": "Page contact",
+            "url": "#"
+          },
+          {
+            "text": "Plan du site",
+            "url": "#"
+          },
+          {
+            "text": "Partenaires",
+            "url": "#"
+          },
+          {
+            "text": "Professionnel",
+            "url": "#"
+          }
+        ]
+      }
+    ],
+    "social": {
+      "facebook": "#",
+      "youtube": "#",
+      "instagram": "#"
+    },
+    "legal": [
+      {
+        "text": "Conditions de vente",
+        "url": "#"
+      },
+      {
+        "text": "Mentions légales",
+        "url": "#"
+      },
+      {
+        "text": "Confidentialité",
+        "url": "#"
+      },
+      {
+        "text": "Politique de développement durable",
+        "url": "#"
+      }
+    ],
+    "copyright": "© 2026 Travel Designer"
+  },
+  "nav": {
+    "items": [
+      {
+        "label": "Indonésie",
+        "link": "#destinations",
+        "children": [
+          {
+            "label": "Bali",
+            "link": "#"
+          },
+          {
+            "label": "Flores",
+            "link": "#"
+          },
+          {
+            "label": "Java",
+            "link": "#"
+          },
+          {
+            "label": "Lombok",
+            "link": "#"
+          },
+          {
+            "label": "Sulawesi",
+            "link": "#"
+          },
+          {
+            "label": "Sumatra",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "label": "Thématiques",
+        "link": "#themes",
+        "children": [
+          {
+            "label": "Voyage de luxe",
+            "link": "#"
+          },
+          {
+            "label": "Voyage d'aventure",
+            "link": "#"
+          },
+          {
+            "label": "Voyage culture",
+            "link": "#"
+          },
+          {
+            "label": "Voyage de noces",
+            "link": "#"
+          },
+          {
+            "label": "Voyage famille",
+            "link": "#"
+          },
+          {
+            "label": "Voyage plage",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "label": "Concept",
+        "link": "#values",
+        "children": [
+          {
+            "label": "Qui sommes-nous ?",
+            "link": "#"
+          },
+          {
+            "label": "Nos valeurs",
+            "link": "#"
+          },
+          {
+            "label": "Nos voyages organisés",
+            "link": "#"
+          },
+          {
+            "label": "Écotourisme Bali",
+            "link": "#"
+          },
+          {
+            "label": "Infos Indonésie",
+            "link": "#"
+          },
+          {
+            "label": "Page contact",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "label": "Magazine",
+        "link": "#reviews",
+        "children": []
+      }
+    ]
+  }
+}

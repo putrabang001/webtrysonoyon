@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "title": "Destinasi Lombok title",
+    "slug": "lombok",
+    "parentId": "indonesia",
+    "category": "Indonesia",
+    "description": "meta deskripsi destinasi lombok"
+  },
+  "hero": {
+    "heading": "Destinasi Lombok",
+    "subtitle": "",
+    "image": ""
+  },
+  "sidebar": {
+    "duration": "",
+    "price": "",
+    "difficulty": "",
+    "mapImage": ""
+  },
+  "sections": [
+    {
+      "type": "image-text",
+      "heading": "content blocks",
+      "text": "text content blocks",
+      "image": "",
+      "reverse": false
+    },
+    {
+      "type": "accordion",
+      "heading": "accordion",
+      "items": [
+        {
+          "title": "item title 1",
+          "content": "item title big 1"
+        },
+        {
+          "title": "item title 2",
+          "content": "item title big 2"
+        }
+      ]
+    }
+  ]
+}

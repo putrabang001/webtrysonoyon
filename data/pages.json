@@ -1,0 +1,32 @@
+[
+  {
+    "id": "home",
+    "parentId": null,
+    "slug": ""
+  },
+  {
+    "id": "indonesia",
+    "parentId": null,
+    "slug": "indonesia"
+  },
+  {
+    "id": "bali",
+    "parentId": "indonesia",
+    "slug": "bali"
+  },
+  {
+    "id": "java-metal",
+    "parentId": "indonesia",
+    "slug": "java-metal"
+  },
+  {
+    "id": "lombok",
+    "parentId": "indonesia",
+    "slug": "lombok"
+  },
+  {
+    "id": "Jawanesia",
+    "parentId": "indonesia",
+    "slug": "Jawa-nesia"
+  }
+]

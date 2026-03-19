@@ -1,0 +1,120 @@
+{
+  "site": {
+    "logoText": "TRAVEL DESIGNER",
+    "favicon": "images/logo.svg"
+  },
+  "contact": {
+    "phone": "0852 7497 3092",
+    "phoneLink": "tel:+33184800662",
+    "email": "giankumala@gmail.com",
+    "contactExpertTitle": "Contact Expert",
+    "contactExpertText": "Need help planning your trip to %PAGE_TITLE%?"
+  },
+  "social": {
+    "facebook": "#",
+    "youtube": "#",
+    "instagram": "#"
+  },
+  "navigation": [
+    {
+      "id": "indonesia",
+      "link": "#destinations",
+      "children": [
+        {
+          "id": "bali",
+          "link": "/indonesia/bali"
+        },
+        {
+          "id": "java-metal",
+          "link": "/indonesia/java-metal"
+        },
+        {
+          "id": "lombok",
+          "link": "/indonesia/lombok"
+        }
+      ]
+    },
+    {
+      "id": "themes",
+      "link": "#themes",
+      "children": [
+        {
+          "id": "luxury-travel",
+          "link": "#"
+        },
+        {
+          "id": "adventure-tour",
+          "link": "#"
+        },
+        {
+          "id": "culture-stay",
+          "link": "#"
+        },
+        {
+          "id": "honeymoon",
+          "link": "#"
+        },
+        {
+          "id": "family-trip",
+          "link": "#"
+        },
+        {
+          "id": "beach-stay",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "id": "concept",
+      "link": "#values",
+      "children": [
+        {
+          "id": "who-are-we",
+          "link": "#"
+        },
+        {
+          "id": "values",
+          "link": "#"
+        },
+        {
+          "id": "organized-trips",
+          "link": "#"
+        },
+        {
+          "id": "ecotourism-bali",
+          "link": "#"
+        },
+        {
+          "id": "indonesia-info",
+          "link": "#"
+        },
+        {
+          "id": "contact-page",
+          "link": "#"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "columns": [
+      {
+        "id": "col-indonesia",
+        "links": ["bali", "flores", "java", "lombok", "sulawesi", "sumatra"]
+      },
+      {
+        "id": "col-themes",
+        "links": ["luxury-travel", "adventure-tour", "family-trip", "culture-stay", "honeymoon", "beach-stay"]
+      },
+      {
+        "id": "col-concept",
+        "links": ["values", "organized-trips", "responsible-tourism", "destination-info", "magazine"]
+      },
+      {
+        "id": "col-about",
+        "links": ["who-are-we", "contact", "sitemap", "partners", "professionals"]
+      }
+    ],
+    "legal": ["terms", "notice", "privacy", "sustainability"],
+    "copyrightBase": "© 2026 Travel Designer"
+  }
+}

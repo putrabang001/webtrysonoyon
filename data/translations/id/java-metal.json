@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "JAVA METAL",
+    "description": "JAVA METAL RF ONLINE"
+  },
+  "hero": {
+    "heading": "JAVA METAL",
+    "backgroundImage": ""
+  },
+  "sections": [
+    {
+      "type": "rich-text",
+      "content": "INI ADALAH KONTEN"
+    }
+  ]
+}

@@ -1,0 +1,409 @@
+{
+  "site": {
+    "title": "Travel Designer — Agen Perjalanan di Bali | Tur Indonesia",
+    "description": "Biro perjalanan kami di Bali mengatur penginapan pribadi di Bali dan Indonesia. Tur kelas atas yang dibuat khusus di Indonesia.",
+    "logoText": "TRAVEL DESIGNER"
+  },
+  "hero": {
+    "heading": "Agen Perjalanan di Bali",
+    "buttonText": "Mari rencanakan perjalanan Anda bersama",
+    "backgroundImage": "images/hero.png"
+  },
+  "about": {
+    "heading": "Penginapan di Bali dan Indonesia",
+    "text": "Travel Designer adalah <a href=\"#\" class=\"link-accent\">agen perjalanan di Bali</a> yang mengatur penginapan privat dan kelas atas di Indonesia. Tur kami disusun dengan cermat dengan mematuhi prinsip <a href=\"#\" class=\"link-accent\">pariwisata berkelanjutan</a>. Anda diurus oleh agensi kami dari kedatangan Anda di Bali hingga perjalanan pulang Anda.",
+    "checklist": [
+      "Sopir pribadi dan pemandu berbahasa Indonesia",
+      "Perjalanan berkelas atas",
+      "Hotel mewah",
+      "Layanan konsinyasi 24/7"
+    ],
+    "linkText": "Pelajari lebih lanjut tentang agensi kami",
+    "image": "images/about.png"
+  },
+  "specialist": {
+    "heading": "Agen Spesialis Perjalanan di Bali",
+    "text": "Sebuah <strong>perjalanan yang dibuat khusus ke Bali</strong> sangat ideal untuk menikmati ketenangan pulau dan keramahan penduduknya. Benamkan diri Anda dalam legenda lokal selama tur luar biasa dengan <strong>biro perjalanan Bali</strong> kami. Temukan budaya dan tradisi unik yang bertahan lama. Menggabungkan pantai, hutan, sawah terasering, gunung berapi, air terjun, dan pura, sebuah <strong>perjalanan ke Bali yang diselenggarakan oleh agensi kami</strong> menonjol karena keragamannya. Di lokasi, infrastruktur hotel merespons <strong>tur mewah</strong> dengan sempurna.",
+    "buttonText": "Ide Perjalanan Bali Kami",
+    "backgroundImage": "images/specialist.png"
+  },
+  "selection": {
+    "heading": "Pilihan Kami",
+    "subtitle": "<strong>Ide tur</strong> dan <strong>informasi berguna</strong> untuk <a href=\"#\" class=\"link-accent\">menginap pengecualian di Bali</a> yang sangat sukses",
+    "cards": [
+      {
+        "title": "Kedatangan Baru",
+        "image": "images/nouveaute.png",
+        "link": "#",
+        "tall": true
+      },
+      {
+        "title": "Favorit",
+        "image": "images/coup-coeur.png",
+        "link": "#",
+        "tall": false
+      },
+      {
+        "title": "Majalah",
+        "image": "images/magazine.png",
+        "link": "#",
+        "tall": false
+      },
+      {
+        "title": "Info Destinasi",
+        "image": "images/infos.png",
+        "link": "#",
+        "tall": false
+      }
+    ]
+  },
+  "themes": {
+    "heading": "Tema Perjalanan",
+    "subtitle": "Sesuai <strong>keinginan perjalanan</strong> di <a href=\"#\" class=\"link-accent\">Indonesia</a>, apa yang akan menjadi milik Anda?",
+    "cards": [
+      {
+        "title": "Perjalanan Mewah",
+        "image": "images/luxury.png",
+        "link": "#"
+      },
+      {
+        "title": "Menginap Budaya",
+        "image": "images/culture.png",
+        "link": "#"
+      },
+      {
+        "title": "Perjalanan Keluarga",
+        "image": "images/family.png",
+        "link": "#"
+      },
+      {
+        "title": "Tur Petualangan",
+        "image": "images/adventure.png",
+        "link": "#"
+      },
+      {
+        "title": "Bulan Madu",
+        "image": "images/honeymoon.png",
+        "link": "#"
+      },
+      {
+        "title": "Liburan Pantai",
+        "image": "images/beach.png",
+        "link": "#"
+      }
+    ]
+  },
+  "destinations": {
+    "heading": "Destinasi Kami di Indonesia",
+    "subtitle": "Temukan <strong>ide perjalanan</strong> antar pulau di <a href=\"#\" class=\"link-accent\">Indonesia</a>",
+    "cards": [
+      {
+        "name": "Bali",
+        "image": "images/bali.png",
+        "link": "#"
+      },
+      {
+        "name": "Flores",
+        "image": "images/flores.png",
+        "link": "#"
+      },
+      {
+        "name": "Java",
+        "image": "images/java.png",
+        "link": "#"
+      },
+      {
+        "name": "Lombok",
+        "image": "images/lombok.png",
+        "link": "#"
+      },
+      {
+        "name": "Sulawesi",
+        "image": "",
+        "link": "#",
+        "gradient": "linear-gradient(135deg, #1a5c4b, #2d8b78)"
+      },
+      {
+        "name": "Sumatra",
+        "image": "",
+        "link": "#",
+        "gradient": "linear-gradient(135deg, #2d4a3e, #4a7c6b)"
+      }
+    ]
+  },
+  "values": {
+    "heading": "Nilai Tambah Kami",
+    "cards": [
+      {
+        "icon": "star",
+        "title": "Kualitas",
+        "description": "Agen perjalanan berkelas dan disesuaikan di Bali yang menangani destinasinya dengan sempurna"
+      },
+      {
+        "icon": "check",
+        "title": "Tanggung Jawab",
+        "description": "Perusahaan yang berkontribusi pada pengembangan pariwisata bertanggung jawab dan menyisihkan 3% keuntungannya untuk asosiasi Anak di Bali"
+      },
+      {
+        "icon": "shield",
+        "title": "Ketenangan",
+        "description": "Penasihat perjalanan yang peduli dan responsif yang mendampingi Anda sebelum dan selama menginap di Indonesia"
+      },
+      {
+        "icon": "help",
+        "title": "Bantuan",
+        "description": "Tersedia 24/7 selama perjalanan Anda, layanan pramutamu kami di Bali siap menjawab seluruh permintaan Anda"
+      }
+    ]
+  },
+  "reviews": {
+    "heading": "Ulasan Wisatawan Kami",
+    "subtitle": "Mereka memercayai kami, temukan <strong>umpan balik</strong> mereka.",
+    "rating": "4.9/5",
+    "ratingLabel": "Luar Biasa | 157 ulasan",
+    "buttonText": "Baca Ulasan",
+    "buttonLink": "#"
+  },
+  "contact": {
+    "phone": "0852 7497 3092",
+    "phoneLink": "tel:+33184800662",
+    "email": "giankumala@gmail.com",
+    "formText": "Formulir Kontak"
+  },
+  "footer": {
+    "columns": [
+      {
+        "title": "Indonesia",
+        "titleLink": "#",
+        "links": [
+          {
+            "text": "Bali",
+            "url": "#"
+          },
+          {
+            "text": "Flores",
+            "url": "#"
+          },
+          {
+            "text": "Java",
+            "url": "#"
+          },
+          {
+            "text": "Lombok",
+            "url": "#"
+          },
+          {
+            "text": "Sulawesi",
+            "url": "#"
+          },
+          {
+            "text": "Sumatra",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "title": "Tema Perjalanan",
+        "links": [
+          {
+            "text": "Perjalanan Mewah",
+            "url": "#"
+          },
+          {
+            "text": "Tur Petualangan",
+            "url": "#"
+          },
+          {
+            "text": "Perjalanan Keluarga",
+            "url": "#"
+          },
+          {
+            "text": "Pusat Budaya",
+            "url": "#"
+          },
+          {
+            "text": "Bulan Madu",
+            "url": "#"
+          },
+          {
+            "text": "Liburan Pantai",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "title": "Konsep",
+        "links": [
+          {
+            "text": "Nilai-nilai Kami",
+            "url": "#"
+          },
+          {
+            "text": "Perjalanan Kami",
+            "url": "#"
+          },
+          {
+            "text": "Pariwisata Berkelanjutan",
+            "url": "#"
+          },
+          {
+            "text": "Info Destinasi",
+            "url": "#"
+          },
+          {
+            "text": "Majalah",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "title": "Tentang Kami",
+        "links": [
+          {
+            "text": "Siapa Kami?",
+            "url": "#"
+          },
+          {
+            "text": "Kontak",
+            "url": "#"
+          },
+          {
+            "text": "Peta Situs",
+            "url": "#"
+          },
+          {
+            "text": "Mitra",
+            "url": "#"
+          },
+          {
+            "text": "Profesional",
+            "url": "#"
+          }
+        ]
+      }
+    ],
+    "social": {
+      "facebook": "#",
+      "youtube": "#",
+      "instagram": "#"
+    },
+    "legal": [
+      {
+        "text": "Syarat Penjualan",
+        "url": "#"
+      },
+      {
+        "text": "Pemberitahuan Hukum",
+        "url": "#"
+      },
+      {
+        "text": "Kebijakan Privasi",
+        "url": "#"
+      },
+      {
+        "text": "Kebijakan Keberlanjutan",
+        "url": "#"
+      }
+    ],
+    "copyright": "© 2026 Travel Designer"
+  },
+  "nav": {
+    "items": [
+      {
+        "label": "Indonesia",
+        "link": "#destinations",
+        "children": [
+          {
+            "label": "Bali",
+            "link": "#"
+          },
+          {
+            "label": "Flores",
+            "link": "#"
+          },
+          {
+            "label": "Java",
+            "link": "#"
+          },
+          {
+            "label": "Lombok",
+            "link": "#"
+          },
+          {
+            "label": "Sulawesi",
+            "link": "#"
+          },
+          {
+            "label": "Sumatra",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "label": "Tema",
+        "link": "#themes",
+        "children": [
+          {
+            "label": "Perjalanan Mewah",
+            "link": "#"
+          },
+          {
+            "label": "Tur Petualangan",
+            "link": "#"
+          },
+          {
+            "label": "Menginap Budaya",
+            "link": "#"
+          },
+          {
+            "label": "Bulan Madu",
+            "link": "#"
+          },
+          {
+            "label": "Perjalanan Keluarga",
+            "link": "#"
+          },
+          {
+            "label": "Liburan Pantai",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "label": "Konsep",
+        "link": "#values",
+        "children": [
+          {
+            "label": "Siapa Kami?",
+            "link": "#"
+          },
+          {
+            "label": "Nilai-nilai Kami",
+            "link": "#"
+          },
+          {
+            "label": "Perjalanan yang Kami Atur",
+            "link": "#"
+          },
+          {
+            "label": "Ekowisata Bali",
+            "link": "#"
+          },
+          {
+            "label": "Info Indonesia",
+            "link": "#"
+          },
+          {
+            "label": "Halaman Kontak",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "label": "Majalah",
+        "link": "#reviews",
+        "children": []
+      }
+    ]
+  }
+}
